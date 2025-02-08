@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import mazedfs from "../../Assets/Projects/mazedfs.jpg";
+import tikicrawl from "../../Assets/Projects/tikicrawl.png";
+import lstm from "../../Assets/Projects/lstm.jpg";
+import iot_webpage from "../../Assets/Projects/iot_webpage.jpg";
+import salelr from "../../Assets/Projects/salelr.png";
+
 
 function Projects() {
   return (
@@ -23,70 +23,59 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={tikicrawl}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Tiki Product Crawler"
+              description="A web scraping tool designed to extract product data from Tiki.vn, a popular e-commerce platform in Vietnam. It utilizes Python with libraries like BeautifulSoup and requests to crawl product details such as names, prices, ratings, and images. The collected data is then structured and stored for further analysis or application. This tool is useful for market research, price comparison, or e-commerce data analysis."
+              ghLink="https://github.com/itwasmehyu/tikiCrawler"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={lstm}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Eng_Vie Translator"
+              description="A neural machine translation (NMT) project that uses Long Short-Term Memory (LSTM) networks to translate between English and Vietnamese. Built with Python and TensorFlow/Keras, the model is trained on a dataset of bilingual sentence pairs to learn language patterns and improve translation accuracy. The repository includes data preprocessing steps, model training scripts, and evaluation methods to assess translation quality. This project is useful for natural language processing (NLP) research, educational purposes, or as a foundation for developing custom machine translation systems."
+              ghLink="https://github.com/itwasmehyu/LSTM_EngVie"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={salelr}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Sales Prediction using LR"
+              description="A machine learning project focused on sales prediction using historical data. Built with Python, it utilizes libraries such as pandas, scikit-learn, and matplotlib for data preprocessing, model training, and visualization. The project applies regression techniques to analyze past sales trends and predict future performance, making it valuable for business analytics, demand forecasting, and decision-making. With a structured workflow, this repository can be extended to incorporate more advanced models like deep learning or integrated into a larger data-driven sales strategy."
+              ghLink="https://github.com/itwasmehyu/Sales_Predict"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={mazedfs}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Maze Runner based on DFS"
+              description="A maze generation and solving project implemented in Python. It uses Depth-First Search (DFS) to both generate random mazes and find solutions to them. The project likely employs graph-based algorithms to construct the maze as a grid of nodes and traverse it systematically to find a valid path. This repository is useful for understanding graph traversal, backtracking techniques, and algorithmic problem-solving. It can be expanded with other pathfinding algorithms like A or BFS* to compare efficiency and effectiveness."
+              ghLink="https://github.com/itwasmehyu/Maze_Gen_and_Solve_using_DFS"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={iot_webpage}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="IOT Report Webpage"
+              description="A web-based IoT device management system designed to monitor and control connected devices. Built with full-stack web technologies, the project likely includes a backend for handling device communication and a frontend for user interaction. It enables users to view real-time device status, send commands, and analyze collected data, making it useful for smart home automation, industrial IoT, or remote monitoring applications. The repository can be extended with features like MQTT integration, cloud storage, or AI-driven analytics to enhance functionality."
+              ghLink="https://github.com/itwasmehyu/iot_admin"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
